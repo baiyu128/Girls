@@ -1,2 +1,2 @@
 # Girls
-try to grep beautiful girl's pic
+try to grep beauty pic
