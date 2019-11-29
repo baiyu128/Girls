@@ -10,7 +10,7 @@ monkey.patch_all()
 # 构建函数，用来查找该页内所有图片集的详细地址。目前一页包含15组套图，所以应该返回包含15个链接的序列。
 def get_page_number(num):
     # 构造每个分页的网址
-    url = 'http://www.mmjpg.com/home/' + num
+    url = 'http://www.mzitu.com/home/' + num
 
     response = requests.get(url).content
     # 调用requests库，获取二进制的相应内容。注意，这里使用.text方法的话，下面的html解析会报错，大家可以试一下。这里涉及到.content和.text的区别了。简单说，如果是处理文字、链接等内容，建议使用.text，处理视频、音频、图片等二进制内容，建议使用.content。
